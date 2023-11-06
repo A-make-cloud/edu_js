@@ -1,0 +1,487 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0 0 6vh;
+}
+
+.logoParent {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 1;
+
+    z-index: 100;
+}
+
+.logoParent img {
+
+    opacity: 1;
+    width: 20%;
+    height: 20%;
+
+    z-index: 100;
+}
+
+.logoB {
+    position: relative;
+}
+
+.logoB img {
+
+    position: absolute;
+    top: 60%;
+    left: 35%;
+
+}
+
+.logoB .item-text {
+
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+}
+
+
+.slide-im img {
+    /* width: 50%; */
+    height: 101vh;
+    width: 853px;
+}
+
+.light-blue {
+    /* width: 50%; */
+    background-color: #0ab7d9;
+    /* background-color:#00223a; */
+    color: #fff;
+    height: 101vh;
+
+}
+
+.dark-blue {
+    /* width: 50%; */
+    background-color: #e5ca1c;
+    /* background-color:#00223a; */
+    color: #fff;
+    height: 101vh;
+
+}
+
+.dark-orange {
+    /* width: 50%; */
+    background-color: #4c4c58;
+    /* background-color:#d4632b; */
+    height: 101vh;
+    color: #fff;
+}
+
+.dark-white {
+    /* width: 50%; */
+    height: 101vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.dark-white p {
+
+    margin-bottom: 10px;
+}
+
+/* chevron down*/
+
+.kuJdsF {
+    position: fixed;
+    height: 24px;
+    width: 48px;
+    bottom: 30px;
+    left: calc(50% - 24px);
+    cursor: pointer;
+    z-index: 10;
+    border: medium;
+    background: transparent;
+    transition: transform 0.25s ease-in-out 0s;
+    transform: scaleY(1);
+}
+
+.kuJdsF .one {
+    position: absolute;
+    height: 1px;
+    width: 36px;
+    bottom: 14px;
+    left: 18.5px;
+    transform: rotate(-45deg);
+    transition: background 0.25s ease-in-out 0s;
+    background: white;
+}
+
+.kuJdsF .two {
+    position: absolute;
+    height: 1px;
+    width: 36px;
+    bottom: 14px;
+    right: 18.5px;
+    transform: rotate(45deg);
+    transition: background 0.25s ease-in-out 0s;
+    background: white;
+}
+
+/* chevron up*/
+.ecDdNd {
+    position: fixed;
+    height: 24px;
+    width: 48px;
+    bottom: 30px;
+    left: calc(50% - 24px);
+    cursor: pointer;
+    z-index: 10;
+    border: medium;
+    background: transparent;
+    transition: transform 0.25s ease-in-out 0s;
+    transform: scaleY(-1);
+}
+
+.ecDdNd .one {
+    position: absolute;
+    height: 1px;
+    width: 36px;
+    bottom: 14px;
+    left: 18.5px;
+    transform: rotate(-45deg);
+    transition: background 0.25s ease-in-out 0s;
+    background: rgb(212, 99, 43);
+}
+
+.ecDdNd .two {
+    position: absolute;
+    height: 1px;
+    width: 36px;
+    bottom: 14px;
+    right: 18.5px;
+    transform: rotate(45deg);
+    transition: background 0.25s ease-in-out 0s;
+    background: rgb(212, 99, 43);
+}
+
+/* text side with background color */
+.item-text {
+    padding: 30vh 5vw;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.item-text form {
+    text-align: left;
+    padding: 0 0 0 7vw;
+}
+
+.item-text input,
+.item-text textarea {
+    text-align: justify;
+    background-color: #0ab7d9;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 20vw;
+}
+
+.item-text form input[type="submit"] {
+    background-color: #fff;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0 2px;
+}
+
+.item-text form p {
+    font-size: 0.6em;
+}
+
+.last_slide-left {
+    /* border: 10px solid #0ab7d9; */
+    border-right: none;
+    /* padding: 20px;  */
+}
+
+.last_slide-right {
+    /* border: 10px solid #0ab7d9; */
+    border-left: none;
+    /* padding: 20px;  */
+}
+
+.address p {
+    margin-bottom: 5%;
+}
+
+#display-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    position: relative;
+    overflow: hidden;
+
+    transition-property: visibility, opacity;
+    transition-duration: 0s, 1s;
+}
+
+#left-side.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 1s;
+}
+
+.oneslide {
+    transform: translateY(-101vh);
+}
+
+#left-side {
+    height: 101vh;
+
+    transition-property: background-color;
+    transition-duration: 3s;
+
+}
+
+#right-side {
+    height: 101vh;
+
+    transition-property: background-color;
+    transition-duration: 3s;
+
+}
+
+.slide-right {
+    height: 101vh;
+    transition-property: background-color;
+    transition-duration: 3s;
+    margin-top: -5px;
+
+}
+
+.slide-left {
+    height: 101vh;
+    transition-property: background-color;
+    transition-duration: 3s;
+
+
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.p-rel {
+    position: relative;
+}
+
+/* .slide-right{
+animation-duration: 5s;
+animation-name: glissement;
+}
+.slide-left{
+animation-duration: 5s;
+animation-name: glissementDown;
+} */
+.anim_down {
+    animation-duration: 15s;
+    animation-name: glissementDown;
+    /* animation-iteration-count: infinite; */
+}
+
+.anim_up {
+    animation-duration: 15s;
+    animation-name: glissement;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes glissement {
+    from {
+        margin-top: 100%;
+
+    }
+
+    to {
+        margin-top: 0%;
+        /* width: 100%; */
+    }
+}
+
+@keyframes glissementDown {
+    from {
+        margin-top: 0%;
+        /* width: 300%; */
+    }
+
+    to {
+        margin-top: 100%;
+        /* width: 100%; */
+    }
+}
+
+/*  logo dernier slide  */
+.logoBot {
+    position: absolute;
+    left: 42%;
+    top: 64%;
+}
+
+.item-textF>hr {
+    margin-top: 50px;
+    color: ghostwhite;
+}
+
+.item-textF>img {
+    margin: -2.5vh 0vw 0;
+    width: 102%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.copyright {
+    margin: 45vh 0 0 0vw;
+    justify-content: center;
+
+}
+
+.copyright a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #0ab7d9;
+}
+
+@media screen and (max-width:476px) {
+    .slide-im img {
+        /* width: 50%; */
+        height: 101vh;
+        width: 476px;
+    }
+
+    #left-side {
+        width: 476px;
+    }
+
+    #right-side {
+        width: 476px;
+    }
+
+
+}
+
+/*   animation text */
+h1.test {
+    /* position: absolute; */
+    animation: titleH1 5s ease-in;
+}
+
+h1.test2 {
+    /* position: absolute; */
+    animation: titleH12 5s ease-in 3s;
+
+}
+
+h1.test3+h4 {
+    /* position: absolute; */
+    animation: titleH13 5s ease-in 10s;
+
+}
+
+h1.test4 {
+    /* position: absolute; */
+    animation: titleH4 5s ease-in 20s;
+}
+
+h1.test5 {
+    /* position: absolute; */
+    animation: titleH5 5s ease-in 30s;
+}
+
+
+@keyframes titleH1 {
+    from {
+        margin-top: -100%;
+        /* margin: 5vh 0 6vh; */
+
+    }
+
+    to {
+        margin-top: 0%;
+        /* margin: 0 0 6vh; */
+
+    }
+}
+
+@keyframes titleH12 {
+    from {
+        margin-top: 100%;
+        /* margin: 5vh 0 6vh; */
+
+    }
+
+    to {
+        margin-top: 0%;
+        /* margin: 0 0 6vh; */
+
+    }
+}
+
+@keyframes titleH13 {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+@keyframes titleH4 {
+    from {
+        transform: scaleX(0);
+        /* margin: 5vh 0 6vh; */
+
+    }
+
+    to {
+        transform: scaleX(2);
+
+    }
+}
+
+@keyframes titleH5 {
+    from {
+        margin-top: 100%;
+
+    }
+
+    to {
+        margin-top: 0%;
+
+    }
+}
+
+/*   animation logo */
+.logoB img {
+    animation: titlelogo 2s ease-in-out;
+}
+
+@keyframes titlelogo {
+    from {
+        margin-top: 100%;
+
+    }
+
+    to {
+        margin-top: 0%;
+
+    }
+}
